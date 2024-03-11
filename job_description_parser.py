@@ -3,6 +3,8 @@ import json
 
 from models import JobDescription
 from tools import job_description_tools
+from config import MODEL_NAME
+
 
 class JobDescriptionParser:
     """
@@ -17,7 +19,7 @@ class JobDescriptionParser:
 
     def parse(self, text):
         response = self.llm_client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL_NAME,
             messages=[
                 {
                     "role": "system",

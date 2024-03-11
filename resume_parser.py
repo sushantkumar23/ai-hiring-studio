@@ -3,6 +3,7 @@ import json
 
 from models import Resume
 from tools import resume_tools
+from config import MODEL_NAME
 
 
 class ResumeParser:
@@ -18,7 +19,7 @@ class ResumeParser:
 
     def parse(self, text):
         response = self.llm_client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=MODEL_NAME,
             messages=[
                 {
                     "role": "system",
