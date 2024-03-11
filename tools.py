@@ -98,3 +98,27 @@ resume_tools = [
         }
     }
 ]
+
+matching_engine_tools = [
+   {
+       "type": "function",
+        "function": {
+            "name": "match_job_description_with_resume",
+            "description": "Match the job description with the resume. Provide details about the matched attributes and an overall similarity score out of 100.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "similarity_comments": {
+                        "type": "string",
+                        "description": "Briefly analysis the overall similarity between the job description and resume match which would explain the score provided"
+                    },
+                    "similarity_score": {
+                        "type": "number",
+                        "description": "The overall similarity score out of 100"
+                    }
+                },
+                "required": ["similarity_comments", "similarity_score"]
+            }
+        }
+    }
+]
