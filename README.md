@@ -26,9 +26,14 @@ The matching engine is responsible for matching the candidate's skills to the jo
 
 The `pydantic` models are used to validate the input data and to serialize the output data. The models are defined in the `models.py` file.
 
-## OpenAI LLM Model
+1. JobDescription
+2. Resume
 
-The LLM Model is easily configurable and can be changed from the `config.py` file. Some of the valid instuct models that can be used are 'gpt-3.5-turbo', 'gpt-4-0125-preview', 'gpt-4-1106-preview'.
+## LLM: OpenAI
+
+An `OPENAI_API_KEY` is required to use the LLM model. The OPENAI_API_KEY can be obtained from the OpenAI website. The OPENAI_API_KEY should be set as an environment variable with the name `OPENAI_API_KEY`.
+
+The LLM Model is easily configurable and can be changed from the `config.py` file. Some of the valid instuct models that can be used are `gpt-3.5-turbo`, `gpt-4-0125-preview`, `gpt-4-1106-preview`.
 
 Best performance is achieved with the 'gpt-4-0125-preview' model
 Cost effective performance is achieved with the 'gpt-3.5-turbo' model
