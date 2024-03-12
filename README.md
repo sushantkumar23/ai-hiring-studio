@@ -54,3 +54,17 @@ The LLM Model is easily configurable and can be changed from the `config.py` fil
 
 Best performance is achieved with the 'gpt-4-0125-preview' model
 Cost effective performance is achieved with the 'gpt-3.5-turbo' model
+
+## Testing
+
+The pytest framework is used for testing the LLM hiring system. The tests are implemented in the `tests` folder for each of the components. The tests can be run using the following command:
+
+```bash
+pytest
+```
+
+## Deployment
+
+Dockerfile is provided for easy deployment of the LLM hiring system along with a requirements.txt file with a containerized environment.
+
+For quicker deployments, on managed services such as Vercel, the `vercel.json` file is provided for easy deployment.
