@@ -1,4 +1,4 @@
-# LLM Hiring System
+# AI Hiring Studio
 
 A novel hiring system that uses state of the art NLP technologies such as LLM to help efficiently match and rank candidates to job postings. The system is designed to help hiring managers and recruiters to quickly and efficiently match candidates to job postings.
 
@@ -6,7 +6,7 @@ A novel hiring system that uses state of the art NLP technologies such as LLM to
 
 ## Installation and Usage
 
-The LLM hiring system is a FastAPI application that can be installed and run using the following commands:
+AI Hiring Studio is a FastAPI application that can be installed and run using the following commands:
 
 ```bash
 pip install -r requirements.txt
@@ -15,7 +15,7 @@ uvicorn main:app --reload
 
 ## Components
 
-The LLM hiring systems consists of the following components:
+The AI Hiring Studio consists of the following components:
 
 1. Job Description Parser
 2. Candidate Resume Parser
@@ -70,6 +70,6 @@ pytest
 
 ## Deployment
 
-Dockerfile is provided for easy deployment of the LLM hiring system along with a requirements.txt file with a containerized environment.
+Dockerfile is provided for easy deployment of the AI Hiring Studio along with a requirements.txt file with a containerized environment.
 
 For quicker deployments, on managed services such as Vercel, the `vercel.json` file is provided for easy deployment.
