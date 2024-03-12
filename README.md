@@ -1,6 +1,15 @@
 # LLM Hiring System
 
-A novel hiring system that uses state of the art NLP technologies such as LLM to help efficiently match and rank candidates to job postings.
+A novel hiring system that uses state of the art NLP technologies such as LLM to help efficiently match and rank candidates to job postings. The system is designed to help hiring managers and recruiters to quickly and efficiently match candidates to job postings.
+
+## Installation and Usage
+
+The LLM hiring system is a FastAPI application that can be installed and run using the following commands:
+
+```bash
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
 
 ## Components
 
@@ -8,7 +17,8 @@ The LLM hiring systems consists of the following components:
 
 1. Job Description Parser
 2. Candidate Resume Parser
-3. Matching Engine
+3. Similarity Score Calculator
+4. Matching Engine
 
 ### Job Description Parser
 
@@ -17,6 +27,10 @@ The job description parser is responsible for parsing the job description and ex
 ### Candidate Resume Parser
 
 The candidate resume parser is responsible for parsing the candidate resume and extracting the relevant information such as the candidate's name, contact information, and the candidate's skills. The candidate resume parser is implemented in the `candidate_resume_parser.py` file.
+
+### Similarity Score Calculator
+
+The similarity score calculator is responsible for calculating the similarity score between the candidate's skills and the job description. The similarity score calculator is implemented in the `similarity_score.py` file.
 
 ### Matching Engine
 
