@@ -99,7 +99,7 @@ resume_tools = [
     }
 ]
 
-matching_engine_tools = [
+similarity_score_tools = [
    {
        "type": "function",
         "function": {

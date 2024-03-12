@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from llm_client import llm_client
-from runner import Runner
+from matching_engine import MatchingEngine
 
 
 app = FastAPI(
@@ -20,6 +20,6 @@ async def calculate_similarity_score(job_description_text: str, resume_text: str
     """
     Calculate the match score between the job description and the resume
     """
-    runner = Runner(llm_client=llm_client)
-    matched_attributes = runner.calculate_match_score(job_description_text, resume_text)
+    matching_engine = MatchingEngine(llm_client=llm_client)
+    matched_attributes = matching_engine.match(job_description_text, resume_text)
     return {"matched_attributes": matched_attributes}

@@ -3,15 +3,8 @@ import pytest
 
 from llm_client import llm_client
 from job_description_parser import JobDescriptionParser
+from samples import sample_job_description_text
 
-
-sample_job_description_text = """
-Job Title: Software Engineer
-Location: San Francisco, CA
-Industry/Domain: Technology
-Education Degree: Bachelor's in Computer Science or related field
-Technical Skills: Python, Java, SQL, Git, Agile methodologies
-"""
 
 @pytest.fixture
 def job_description_parser():
