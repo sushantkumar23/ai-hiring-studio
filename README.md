@@ -4,7 +4,6 @@ A novel hiring system that uses state of the art NLP technologies such as LLM to
 
 <img width="999" alt="Screenshot 2024-03-12 at 11 16 32 AM" src="https://github.com/sushantkumar23/llm-hiring-system/assets/4726333/0532aeb2-183e-4442-8756-a843326af881">
 
-
 ## Installation and Usage
 
 The LLM hiring system is a FastAPI application that can be installed and run using the following commands:
@@ -38,6 +37,12 @@ The similarity score calculator is responsible for calculating the similarity sc
 ### Matching Engine
 
 The matching engine is responsible for matching the candidate's skills to the job description and ranking the candidates based on the match. The matching engine is implemented in the `matching_engine.py` file.
+
+## Quick Demo
+
+A python notebook is provided for a quick demo of the project. The notebook is located in the root directory of the project and is named `Resume-JD-matching-notebook.ipynb`.
+
+This notebook provides a brief overview of the project and a few samples cases to demonstrate the functionality of the LLM hiring system.
 
 ## Pydantic Models
 
