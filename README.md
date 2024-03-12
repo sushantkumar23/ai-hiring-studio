@@ -2,6 +2,9 @@
 
 A novel hiring system that uses state of the art NLP technologies such as LLM to help efficiently match and rank candidates to job postings. The system is designed to help hiring managers and recruiters to quickly and efficiently match candidates to job postings.
 
+<img width="999" alt="Screenshot 2024-03-12 at 11 16 32 AM" src="https://github.com/sushantkumar23/llm-hiring-system/assets/4726333/0532aeb2-183e-4442-8756-a843326af881">
+
+
 ## Installation and Usage
 
 The LLM hiring system is a FastAPI application that can be installed and run using the following commands:
